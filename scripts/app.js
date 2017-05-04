@@ -20,6 +20,23 @@ $(document).ready(function() {
       Geo.lng = position.coords.longitude;
   }
 
+  var key = "c2197568420afa6b";
+  var Weather = "http://api.wunderground.com/api/" + key + "forecast/geolookup/conditions/q/" + Geo.lat + "," + Geo.lng + ".json";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
