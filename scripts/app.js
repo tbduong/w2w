@@ -21,9 +21,9 @@ console.log( "Up and running!" );
       console.log(Geo.lat + "," + Geo.lng );
 
       var key = "c2197568420afa6b";
-      // var Weather = "http://api.wunderground.com/api/" + key + "forecast/geolookup/q/" + Geo.lat + "," + Geo.lng + ".json";
+      var Weather = "http://api.wunderground.com/api/" + key + "forecast/geolookup/q/" + Geo.lat + "," + Geo.lng + ".json";
       //Use San Francisco location for Now
-      var Weather = "http://api.wunderground.com/api/c2197568420afa6b/geolookup/q/37.776289,-122.395234.json";
+      // var Weather = "http://api.wunderground.com/api/c2197568420afa6b/conditions/q/CA/San_Francisco.json";
       console.log(Weather);
 
       $.ajax({
@@ -32,45 +32,20 @@ console.log( "Up and running!" );
           success: function(data) {
             //Get all information
             console.log(data);
-            // var location = data.location;
-            // //setting the spans to the correct parameters
-            // $('#location').html(location);
+
+          var location = data.location.city;
+          console.log(location);
+          var description = data;
+          console.log(description);
           }
+
+
+
+
 
 
   });
 
-
-
-
-
-
-
-
-
-
-
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
