@@ -39,8 +39,10 @@ console.log( "Up and running!" );
           console.log(temp);
           var wind = data.current_observation.wind_string;
           console.log(wind);
-          
+
           $('#location').html(location);
+          $('#temp').html(temp);
+          $('#wind').html(temp);
           }
 
 
