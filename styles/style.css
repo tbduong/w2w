@@ -1,7 +1,42 @@
 html, body {
-    background-color: grey;
+  background-color: #ADD8E9;
 }
 
 h1, h2, h3, h4, h5, p {
-    color: white;
+  color: white;
+  font-family: sans-serif;
+}
+
+.logo {
+  font-size: 5em;
+}
+
+#forecast{
+  margin: 0 auto;
+  background-color: #ADD8E9;
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px;
+  width: 30em;
+  height: 20em;
+  border: 3px;
+  border-style: solid;
+  border-color: white;
+}
+
+#location, #temp, #wind {
+  font-weight: bold;
+}
+
+.clothes {
+  margin: 0 auto;
+  background-color: #ADD8E9;
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px;
+  width: 30em;
+  height: 10em;
+  border: 3px;
+  border-style: solid;
+  border-color: white;
 }

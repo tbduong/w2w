@@ -39,10 +39,13 @@ console.log( "Up and running!" );
           console.log(temp);
           var wind = data.current_observation.wind_string;
           console.log(wind);
+          var img = data.current_observation.icon_url;
+          console.log(img);
 
           $('#location').html(location);
           $('#temp').html(temp);
-          $('#wind').html(temp);
+          $('#wind').html(wind);
+          $('#img').attr('src', img);
           }
 
 
